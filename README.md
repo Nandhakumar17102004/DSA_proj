@@ -36,37 +36,41 @@ This allows efficient insertion, searching, deletion, and visualization.
 
 ```python
 graphs.insert_string(s)
-
+```
 When a string is inserted:
 
-The first character connects to a root node (0)
+- The first character connects to a root node (0)
 
-Each subsequent character is linked to the previous one
+- Each subsequent character is linked to the previous one
 
-Edge weights are incremented if the connection already exists
+- Edge weights are incremented if the connection already exists
 
-Character nodes are created if missing
+- Character nodes are created if missing
 
 Time complexity depends on string length N:
 
 Insertion = O(N)
 ```
+
 ## This matches the prefix-based behaviour of a trie. 
 
-
+```
 ## 2. Search String
 ```
+```
 graphs.find_word(s)
-
+```
+```
 Searching works by:
 
-Starting from the first character node
+- Starting from the first character node
 
-Traversing edges sequentially
+- Traversing edges sequentially
 
-Verifying each character connection
+- Verifying each character connection
 
-If any connection is missing, the word does not exist.
+- If any connection is missing, the word does not exist.
+```
 ```
 ## Time complexity:
 
@@ -82,24 +86,24 @@ graphs.delete_str(s)
 ```
 Deletion involves:
 
-Verifying that the string exists
+- Verifying that the string exists
 
-Decreasing edge weights
+- Decreasing edge weights
 
-Removing edges when weight becomes zero
+- Removing edges when weight becomes zero
 
-Removing nodes with no remaining connections
+- Removing nodes with no remaining connections
 
-Worst-case time complexity depends on:
+## Worst-case time complexity depends on:
 
-string length N
+- string length N
 
-number of vertices V
-
+- number of vertices V
+```
 Deletion = O(N × V)
 
 ```
-```
+
 
 ## 4. Print Graph
 ```
@@ -117,11 +121,11 @@ import matplotlib.pyplot as plt
 ```
 The program uses NetworkX to:
 
-Convert adjacency list into a graph
+- Convert adjacency list into a graph
 
-Generate layout using spring_layout
+- Generate layout using spring_layout
 
-Draw labeled nodes and edges
+- Draw labeled nodes and edges
 
 This provides a visual representation of the character graph.
 
