@@ -48,13 +48,13 @@ When a string is inserted:
 - Character nodes are created if missing
 
 Time complexity depends on string length N:
-
+```
 Insertion = O(N)
 ```
 
 ## This matches the prefix-based behaviour of a trie. 
 
-```
+
 ## 2. Search String
 
 ```
