@@ -76,11 +76,11 @@ Search = O(N)
 This is equivalent to trie search complexity. 
 ``
 ## GRAPH WITH TRIE-BASED INDEXING
-`
+
 ## 3. Delete String
 ```
 graphs.delete_str(s)
-
+```
 Deletion involves:
 
 Verifying that the string exists
@@ -136,4 +136,4 @@ Spell checkers
 Prefix matching algorithms
 
 Browser history indexing
-``
+
