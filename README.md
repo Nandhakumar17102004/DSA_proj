@@ -1,45 +1,40 @@
-``
+## Graph with Trie-Based Indexing
 
-Graph with Trie-Based Indexing
+This program implements a hybrid data structure that combines the properties of a graph and a trie to store and process strings efficiently.  
+The implementation follows the idea described in the project report, where a graph represents relationships and a trie structure supports prefix-based indexing.
 
-This program implements a hybrid data structure that combines the properties of a graph and a trie to store and process strings efficiently.
-The implementation follows the idea described in the project report, where a graph represents relationships and a trie structure supports prefix-based indexing. 
-```
-```
-GRAPH WITH TRIE-BASED INDEXING
-``
-Concept
+---
 
-A Graph represents relationships between characters.
+## Concept
 
-A Trie-like structure ensures that strings are stored based on shared prefixes.
+- A graph represents relationships between characters.
+- A trie-like structure ensures that strings are stored based on shared prefixes.
+- Each character is treated as a node.
+- Consecutive characters are connected by edges.
+- Edge weights represent how many times that connection occurs.
 
-Each character is treated as a node.
+This hybrid approach improves performance for prefix search and string operations.
 
-Consecutive characters are connected by edges.
+---
 
-Edge weights represent how many times that connection occurs.
-
-This hybrid approach improves performance for prefix search and string operations, similar to what is discussed in the project documentation. 
-``
-GRAPH WITH TRIE-BASED INDEXING
-
-Data Structures Used
+## Data Structures Used
 
 The program maintains:
-``
-adj_list → adjacency list storing character connections
 
-con_wei → matrix storing edge weights between characters
+- `adj_list` → adjacency list storing character connections  
+- `con_wei` → matrix storing edge weights between characters  
+- `cou` → count of incoming and outgoing connections per node  
+- `adj_isend` → marks characters that appear at string endings  
 
-cou → count of incoming and outgoing connections per node
-
-adj_isend → marks characters that appear at string endings
-``
 This allows efficient insertion, searching, deletion, and visualization.
-`
-Core Operations
-1. Insert String
+
+---
+
+## Core Operations
+
+### 1. Insert String
+
+```python
 graphs.insert_string(s)
 
 When a string is inserted:
@@ -55,12 +50,13 @@ Character nodes are created if missing
 Time complexity depends on string length N:
 
 Insertion = O(N)
+```
+## This matches the prefix-based behaviour of a trie. 
 
-This matches the prefix-based behaviour of a trie. 
-``
-GRAPH WITH TRIE-BASED INDEXING
+## GRAPH WITH TRIE-BASED INDEXING
 `
-2. Search String
+## 2. Search String
+```
 graphs.find_word(s)
 
 Searching works by:
@@ -72,16 +68,17 @@ Traversing edges sequentially
 Verifying each character connection
 
 If any connection is missing, the word does not exist.
-
-Time complexity:
+```
+## Time complexity:
 
 Search = O(N)
 
 This is equivalent to trie search complexity. 
 ``
-GRAPH WITH TRIE-BASED INDEXING
+## GRAPH WITH TRIE-BASED INDEXING
 `
-3. Delete String
+## 3. Delete String
+```
 graphs.delete_str(s)
 
 Deletion involves:
@@ -103,21 +100,21 @@ number of vertices V
 Deletion = O(N × V)
 
 This matches the analysis shown in the report. 
-``
+```
 GRAPH WITH TRIE-BASED INDEXING
 `
-4. Print Graph
+## 4. Print Graph
 graphs.print_g()
 
 Displays adjacency list showing how characters are connected.
 
 This helps visualize the trie-like structure embedded in the graph.
 ``
-5. Graph Visualization
-`
+## 5. Graph Visualization
+```
 import networkx as nx
 import matplotlib.pyplot as plt
-
+```
 The program uses NetworkX to:
 
 Convert adjacency list into a graph
@@ -128,7 +125,7 @@ Draw labeled nodes and edges
 
 This provides a visual representation of the character graph.
 ``
-Applications
+## Applications
 
 This structure can be useful for:
 
