@@ -1,11 +1,13 @@
 ``
+
 Graph with Trie-Based Indexing
 
 This program implements a hybrid data structure that combines the properties of a graph and a trie to store and process strings efficiently.
 The implementation follows the idea described in the project report, where a graph represents relationships and a trie structure supports prefix-based indexing. 
-
+```
+```
 GRAPH WITH TRIE-BASED INDEXING
-
+``
 Concept
 
 A Graph represents relationships between characters.
@@ -19,13 +21,13 @@ Consecutive characters are connected by edges.
 Edge weights represent how many times that connection occurs.
 
 This hybrid approach improves performance for prefix search and string operations, similar to what is discussed in the project documentation. 
-
+``
 GRAPH WITH TRIE-BASED INDEXING
 
 Data Structures Used
 
 The program maintains:
-
+``
 adj_list → adjacency list storing character connections
 
 con_wei → matrix storing edge weights between characters
@@ -33,9 +35,9 @@ con_wei → matrix storing edge weights between characters
 cou → count of incoming and outgoing connections per node
 
 adj_isend → marks characters that appear at string endings
-
+``
 This allows efficient insertion, searching, deletion, and visualization.
-
+`
 Core Operations
 1. Insert String
 graphs.insert_string(s)
@@ -55,9 +57,9 @@ Time complexity depends on string length N:
 Insertion = O(N)
 
 This matches the prefix-based behaviour of a trie. 
-
+``
 GRAPH WITH TRIE-BASED INDEXING
-
+`
 2. Search String
 graphs.find_word(s)
 
@@ -76,9 +78,9 @@ Time complexity:
 Search = O(N)
 
 This is equivalent to trie search complexity. 
-
+``
 GRAPH WITH TRIE-BASED INDEXING
-
+`
 3. Delete String
 graphs.delete_str(s)
 
@@ -101,17 +103,18 @@ number of vertices V
 Deletion = O(N × V)
 
 This matches the analysis shown in the report. 
-
+``
 GRAPH WITH TRIE-BASED INDEXING
-
+`
 4. Print Graph
 graphs.print_g()
 
 Displays adjacency list showing how characters are connected.
 
 This helps visualize the trie-like structure embedded in the graph.
-
+``
 5. Graph Visualization
+`
 import networkx as nx
 import matplotlib.pyplot as plt
 
@@ -124,7 +127,7 @@ Generate layout using spring_layout
 Draw labeled nodes and edges
 
 This provides a visual representation of the character graph.
-
+``
 Applications
 
 This structure can be useful for:
