@@ -20,7 +20,7 @@ adjacent[u][v] = 1;
 adjacent[v][u] = 1;
 
 This means travel is possible in both directions.
-
+```
 ## Key Components of the Program
 
 ### 1. Graph Class
@@ -71,7 +71,7 @@ This simulates real-world routing scenarios where:
 - Roads may be closed
 - Intersections may be congested
 - A second independent path is needed
-
+```
 ### 5. Blocking Logic
 
 After finding the first path:
@@ -110,7 +110,7 @@ No path found.
 
 
 
-```
+``
 ## Concepts Demonstrated
 
 - Graph representation using adjacency matrix  
