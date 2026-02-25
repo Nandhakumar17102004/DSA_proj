@@ -56,11 +56,11 @@ Insertion = O(N)
 
 ```
 ## 2. Search String
-```
+
 ```
 graphs.find_word(s)
 ```
-```
+
 Searching works by:
 
 - Starting from the first character node
@@ -70,14 +70,12 @@ Searching works by:
 - Verifying each character connection
 
 - If any connection is missing, the word does not exist.
-```
-```
+
 ## Time complexity:
 
 Search = O(N)
 
 This is equivalent to trie search complexity. 
-``
 
 
 ## 3. Delete String
@@ -134,11 +132,11 @@ This provides a visual representation of the character graph.
 
 This structure can be useful for:
 
-## Auto-complete systems
+- Auto-complete systems
 
-## Spell checkers
+- Spell checkers
 
-## Prefix matching algorithms
+- Prefix matching algorithms
 
-## Browser history indexing
+- Browser history indexing
 
