@@ -53,8 +53,7 @@ Insertion = O(N)
 ```
 ## This matches the prefix-based behaviour of a trie. 
 
-## GRAPH WITH TRIE-BASED INDEXING
-`
+
 ## 2. Search String
 ```
 graphs.find_word(s)
@@ -75,7 +74,7 @@ Search = O(N)
 
 This is equivalent to trie search complexity. 
 ``
-## GRAPH WITH TRIE-BASED INDEXING
+
 
 ## 3. Delete String
 ```
@@ -101,15 +100,16 @@ Deletion = O(N × V)
 
 ```
 ```
-GRAPH WITH TRIE-BASED INDEXING
 
 ## 4. Print Graph
+```
 graphs.print_g()
-
+```
 Displays adjacency list showing how characters are connected.
 
 This helps visualize the trie-like structure embedded in the graph.
-``
+
+
 ## 5. Graph Visualization
 ```
 import networkx as nx
@@ -124,16 +124,17 @@ Generate layout using spring_layout
 Draw labeled nodes and edges
 
 This provides a visual representation of the character graph.
-``
-## Applications
+
+
+## 6. Applications
 
 This structure can be useful for:
 
-Auto-complete systems
+## Auto-complete systems
 
-Spell checkers
+## Spell checkers
 
-Prefix matching algorithms
+## Prefix matching algorithms
 
-Browser history indexing
+## Browser history indexing
 
