@@ -1,4 +1,5 @@
-```Graph with Trie-Based Indexing
+``
+Graph with Trie-Based Indexing
 
 This program implements a hybrid data structure that combines the properties of a graph and a trie to store and process strings efficiently.
 The implementation follows the idea described in the project report, where a graph represents relationships and a trie structure supports prefix-based indexing. 
@@ -135,6 +136,4 @@ Spell checkers
 Prefix matching algorithms
 
 Browser history indexing
-```
-
-These match the practical use cases listed in the project slides
+``
