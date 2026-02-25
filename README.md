@@ -99,10 +99,10 @@ number of vertices V
 
 Deletion = O(N × V)
 
-This matches the analysis shown in the report. 
+```
 ```
 GRAPH WITH TRIE-BASED INDEXING
-`
+
 ## 4. Print Graph
 graphs.print_g()
 
